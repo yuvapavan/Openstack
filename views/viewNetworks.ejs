@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>User Dashboard</title>
+
+    <link href="stylesheets/bootstrap.css" rel="stylesheet">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link href="stylesheets/style.css" rel="stylesheet">
+  </head>
+
+<body class="container">
+  <a class="side-nav" href="/home">Home</a><br /><br />
+  <main>
+     <h2 class="headline">View Networks</h2><br><br>
+     <table class="table table-bordered table-striped">
+       <thead>
+         <tr>
+           <th>Name</th>
+           <th></th>
+           <th></th>
+        </tr>
+       </thead>
+       <tbody>
+         <% networks.forEach(function(network) { %>
+           <tr>
+             <td><%= network.name %></td>
+          </tr>
+          <% }); %>
+       </tbody>
+     </table>
+  </main>
+
+  </body>
+</html>

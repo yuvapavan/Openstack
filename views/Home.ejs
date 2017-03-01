@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- <script>
+    function myFunction() {
+        var selectList = document.getElementById("projectValue");
+        for (var i = 0; i < projects.length; i++) {
+          var option = document.createElement("option");
+          option.setAttribute("value", projects[i].id);
+          option.text = projects[i].id;
+          selectList.appendChild(option);
+      }
+    }
+    window.onload = function() {
+      var p = myFunction();
+    }
+  </script> -->
+  <head>
+    <meta charset="utf-8">
+    <title>Welcome to Simple Stack</title>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- styles -->
+    <link href="stylesheets/style.css" rel="stylesheet">
+
+  </head>
+  <body>
+
+   <p><center>Welcome </center></p>
+
+ <h1>
+   <a class="side-nav" href="/viewTokens">View Tokens</a><br /><br />
+   <a class="side-nav" href="/viewServers">View Servers</a><br /><br />
+   <a class="side-nav" href="/viewImages">View Images</a><br /><br />
+   <a class="side-nav" href="/viewFlavors">View Flavors</a><br /><br />
+   <a class="side-nav" href="/viewNetworks">View networks</a><br /><br />
+   <a class="side-nav" href="/viewSecurityGroups">View Security Groups</a><br /><br />
+   <center>
+     <label for="token">Project : </label>
+     <td><%= project.name %></td>
+  </center>
+</h1>
+
+</html>
